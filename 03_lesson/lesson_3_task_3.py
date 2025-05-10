@@ -7,6 +7,6 @@ from_address = Address ("456", "troyan", "bokoka", 47, 2)
 
 
 
-Mailing = Mailing (to_address, from_address,1500, "12345"  )
+Mailing = Mailing (to_address, from_address,1500, "12345")
 
 print(Mailing)
