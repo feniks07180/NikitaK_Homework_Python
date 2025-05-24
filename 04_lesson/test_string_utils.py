@@ -35,3 +35,4 @@ class TestStringUtils:
         assert string_utils.delete_symbol("aaaa", "a") == ""
         assert string_utils.delete_symbol("", "a") == ""
         assert string_utils.delete_symbol("abc", "") == "abc"
+        .
