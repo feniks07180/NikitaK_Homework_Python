@@ -1,16 +1,10 @@
 from selenium import webdriver
 from selenium.webdriver.common.by import By
-import time
 
-def main():
-    driver = webdriver.Chrome()
-    try:
-        driver.get("http://uitestingplayground.com/classattr")
-        blue_button = driver.find_element(By.CSS_SELECTOR, "button.btn-primary")  # Ищем кнопку по CSS классу
-        blue_button.click()
+driver = webdriver.Chrome()
 
-        time.sleep(2)
-    finally:
-        driver.quit()
-if __name__ == "__main__":
-    main()
+driver.get("http://uitestingplayground.com/classattr")
+blue_button = driver.find_element(By.CSS_SELECTOR, "button.btn-primary")
+blue_button.click()
+
+driver.quit()
